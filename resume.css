@@ -1,0 +1,14 @@
+.head{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(111,231,176,1) 0%, rgba(154,198,242,1) 100.2% );
+    width: 100%;
+    height: 250px;
+}
+#mpic{
+    width: 20%;
+    height: 200px;
+    margin-right: 15px;
+    margin-left: 15px;
+    position: absolute;
+    background-color: cadetblue;
+    margin-top: 15px;
+}
