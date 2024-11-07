@@ -1,14 +1,115 @@
-.head{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(111,231,176,1) 0%, rgba(154,198,242,1) 100.2% );
-    width: 100%;
-    height: 250px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
-#mpic{
-    width: 20%;
-    height: 200px;
+
+body {
+    min-height: 100vh;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sudlanan {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background: cornsilk;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 0 12px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.con {
+    background-color: #7D7B52;
+    width: 750px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+#mpic {
+    width: 150px;
+    height: 150px;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    border: 50%;
+    border: 4px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    float: left;
     margin-right: 15px;
+}
+
+
+.pinfo_con, .techski_con, .educ_con, .lang_con, .proje_con, .work_con {
+    width: 360px;
+    height: 250px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: #f5f9ff;
+    border-left: 6px solid #7d7b52;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pinfo_con h4, .techski_con h4, .educ_con h4, .lang_con h4, .proje_con h4, .work_con h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.pinfo, .techski, .education, .language, .projects, .workex {
+    color: #A4B8C4;
     margin-left: 15px;
-    position: absolute;
-    background-color: cadetblue;
-    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    margin-left: 15px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px 0;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.pf, .ts, .ed, .lg, .pro, .wex {
+    margin-left: 20px;
+}
+
+
+.pinfo_con:hover, .techski_con:hover, .educ_con:hover, .lang_con:hover, .proje_con:hover, .work_con:hover {
+    color: #7d7b52;
+    transition: transform 0.3s ease;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+p {
+    margin-left: 20px;
+    color: whitesmoke;
 }
