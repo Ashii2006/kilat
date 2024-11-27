@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    height: 45px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cons {
+    border: 1px solid;
+    margin-top: 350px;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    padding: 30px;
+}
+button{
+    background-color: #6FC276;
+    display: flex;
+    justify-content: space-evenly;
+}
+
