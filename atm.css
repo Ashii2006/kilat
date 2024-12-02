@@ -6,22 +6,33 @@
 }
 body {
     height: 45px;
-    background-color: whitesmoke;
+    background-color: #E1E1E1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .cons {
-    border: 1px solid;
+    border: 2px solid white;
     margin-top: 350px;
-    width: 25%;
+    width: 30%;
     height: auto;
     text-align: center;
     padding: 30px;
+    color: #f7f8f7;
+    background-color:#1CB14D ;
 }
-button{
+button {
     background-color: #6FC276;
-    display: flex;
-    justify-content: space-evenly;
+    color: white;
+    font-size: 16px;
+    padding: 5px 5px;
+    border-color:whitesmoke;
+    border-radius: 2px;
+    margin: 10px 0;
 }
-
+button:hover {
+background-color: #5a9c63;
+}
+#currentbalancedisplay{
+    display: none;
+}
