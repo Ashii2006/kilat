@@ -1,7 +1,10 @@
-let currentbalance = 5000;
+let currentbalance = 5000.00;
 
+function updatebalancedisplay() {
+    document.getElementById('Balance').textContent = currentbalance.toFixed(2);
+}
 function withdraw() {
-   let withdrawalamount = parseFloat(prompt("Enter amount to withdraw:"));
+   let withdrawalamount = parseFloat(prompt("Enter amount to withdraw:")) ;
    if( isNaN (withdrawalamount) || withdrawalamount <=0) {
     window.alert("Invalid amount. Please enter a valid amount.");
    }
@@ -12,7 +15,7 @@ function withdraw() {
     currentbalance -= withdrawalamount;
     window.alert(`Withdrawal successful. Your new balance is ₱${currentbalance}.`);
    }
-
+   updatebalancedisplay();
 }
 function deposit() {
     let depositamount = parseFloat(prompt("Enter amount to deposit."));
@@ -23,11 +26,14 @@ function deposit() {
         currentbalance += depositamount;
         window.alert(`Deposit successful. Your new balance is ₱${currentbalance}.`);
     }
- 
+    updatebalancedisplay();
 }
 function checkbalance(){
+    document.getElementById('currentbalancedisplay').style.display = 'block';
+    updatebalancedisplay();
     window.alert(`Your current balance is ₱${currentbalance}`);
 }
 function exit() {
     window.alert("Thank you for using this ATM. See you again!!");
+    document.getElementById('currentbalancedisplay').style.display = 'none';
 }
